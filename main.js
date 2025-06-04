@@ -71,5 +71,8 @@ let pulldown = document.querySelector("#pulldown") // select the first element w
     }
 
   const controlElevation = L.control.elevation({
+    time: false, // keine Zeit track statistik
+    elevationDiv: "#profile", // in profile div verschieben
+    height: 300, //300 Pixel hoch
   }).addTo(map);
   controlElevation.load("data/etappe29.gpx");
