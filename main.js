@@ -69,3 +69,7 @@ let pulldown = document.querySelector("#pulldown") // select the first element w
         //console.log(evt, evt.target.value)
         window.location.href = `https://${evt.target.value}.github.io/biketirol`;
     }
+
+  const controlElevation = L.control.elevation({
+  }).addTo(map);
+  controlElevation.load("data/etappe29.gpx");
