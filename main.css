@@ -71,7 +71,13 @@ footer nav {
     margin-bottom: 0.5em;
 }
 
+
+.bike-tirol {
+    --ele-area: #3D9970;
+    --ele-bg: white;
+}
 #profile {
     margin-top: 0.3em;
     border: 1px solid gray;
-  }
+}
+
