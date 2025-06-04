@@ -75,7 +75,7 @@ let pulldown = document.querySelector("#pulldown") // select the first element w
     elevationDiv: "#profile", // in profile div verschieben
     height: 300, //300 Pixel hoch
     theme: "bike-tirol",
-    slope: true,
+    slope: false,
   }).addTo(map);
 
   controlElevation.load("data/etappe29.gpx");
