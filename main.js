@@ -74,7 +74,14 @@ let pulldown = document.querySelector("#pulldown") // select the first element w
     time: false, // keine Zeit track statistik
     elevationDiv: "#profile", // in profile div verschieben
     height: 300, //300 Pixel hoch
-    theme: "bike-tirol"
+    theme: "bike-tirol",
+    slope: true,
   }).addTo(map);
 
   controlElevation.load("data/etappe29.gpx");
+
+var gkTirol = new L.TileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}.png"); //Tilelayer für Hintergrund der Minimap definieren
+// Knopf zum an und ausschalten der Minimap
+var miniMap = new L.Control.MiniMap(gkTirol, {
+    toggleDisplay: true //kleiner pfeil unten rechts 
+}).addTo(map);
