@@ -32,7 +32,7 @@ let eGrundkarteTirol = {
 L.control.layers({
     "eGrundkarte Tirol Sommer": L.layerGroup([
         eGrundkarteTirol.sommer,
-        eGrundkarteTirol.nomenklatur
+        eGrundkarteTirol.nomenklatur // fügt Beschriftungen/Namen hinzu
     ]).addTo(map),
     "eGrundkarte Tirol Winter": L.layerGroup([
         eGrundkarteTirol.winter,
