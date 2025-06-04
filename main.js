@@ -65,3 +65,7 @@ let pulldown = document.querySelector("#pulldown") // select the first element w
         <option ${selected} value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>`;
         
     }
+    pulldown.onchange = function(evt) {
+        //console.log(evt, evt.target.value)
+        window.location.href = `https://${evt.target.value}.github.io/biketirol`;
+    }
