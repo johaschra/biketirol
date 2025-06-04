@@ -85,3 +85,5 @@ var gkTirol = new L.TileLayer("https://wmts.kartetirol.at/gdi_summer/{z}/{x}/{y}
 var miniMap = new L.Control.MiniMap(gkTirol, {
     toggleDisplay: true //kleiner pfeil unten rechts 
 }).addTo(map);
+
+map.addControl(new L.Control.Fullscreen());
