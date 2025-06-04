@@ -57,7 +57,11 @@ L.control.scale({
 let pulldown = document.querySelector("#pulldown") // select the first element with the  id pulldown in index html
 
     for (let etappe of ETAPPEN) {
+        let selected = "";
+        if (etappe.nr == 29) {
+            selected = "selected"; 
+        }
         pulldown.innerHTML += `
-        <option value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>`;
+        <option ${selected} value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>`;
         
     }
