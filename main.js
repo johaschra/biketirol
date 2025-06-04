@@ -54,9 +54,10 @@ L.control.scale({
 
 //Etappennavigation über Pulldown Menü
 
-for (let etappe of ETAPPEN) {
-    console.log(etappe);
-    console.log(etappe.nr);
-    console.log(etappe.user);
-    console.log(etappe.titel);
-}
+let pulldown = document.querySelector("#pulldown") // select the first element with the  id pulldown in index html
+
+    for (let etappe of ETAPPEN) {
+        pulldown.innerHTML += `
+        <option value="${etappe.user}">Etappe ${etappe.nr}: ${etappe.titel}</option>`;
+        
+    }
